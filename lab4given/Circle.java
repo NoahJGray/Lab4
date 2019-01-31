@@ -47,12 +47,13 @@ public class Circle implements Shape{
         return this.center;
     }
 
-    public boolean equals(Object other){
-        if (this == other) return true;
-        if (other == null) return false;
-        if (this.getClass() != other.getClass()) return false;
-        Circle otherC = (Circle) other;
-        return this.center == otherC.getCenter() &&
-               this.radius == otherC.getRadius();
-    }
+	public boolean equals(Object other){
+		if (this == other) return true;
+		if (other == null) return false;
+		if (this.getClass() != other.getClass()) return false;
+		Circle otherC = (Circle) other;
+		return this.center.equals(otherC.getCenter()) &&
+				this.radius == otherC.getRadius() &&
+				this.color.equals(otherC.getColor());
+	}
 }

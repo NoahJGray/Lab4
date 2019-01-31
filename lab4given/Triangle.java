@@ -64,8 +64,9 @@ public class Triangle implements Shape{
         if (other == null) return false;
         if (this.getClass() != other.getClass()) return false;
         Triangle otherT = (Triangle) other;
-        return this.a == otherT.getVertexA() &&
-               this.b == otherT.getVertexB() &&
-               this.c == otherT.getVertexC();
+        return this.a.equals(otherT.getVertexA()) &&
+               this.b.equals(otherT.getVertexB()) &&
+               this.c.equals(otherT.getVertexC()) &&
+               this.color.equals(otherT.getColor());
     }
 }

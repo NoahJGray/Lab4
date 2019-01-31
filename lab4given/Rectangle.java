@@ -61,8 +61,9 @@ public class Rectangle implements Shape{
         if (other == null) return false;
         if (this.getClass() != other.getClass()) return false;
         Rectangle otherR = (Rectangle) other;
-        return this.topLeft == otherR.getTopLeft() &&
+        return this.topLeft.equals(otherR.getTopLeft()) &&
                this.width == otherR.getWidth() &&
-               this.height == otherR.getHeight();
+               this.height == otherR.getHeight() &&
+               this.color.equals(otherR.getColor());
     }
 }
