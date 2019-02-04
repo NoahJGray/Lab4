@@ -47,7 +47,6 @@ public class Circle implements Shape{
         return this.center;
     }
 
-<<<<<<< HEAD
     public boolean equals(Object other){
         if (this == other) return true;
         if (other == null) return false;
@@ -57,15 +56,3 @@ public class Circle implements Shape{
                this.radius == otherC.getRadius();
     }
 }
-=======
-	public boolean equals(Object other){
-		if (this == other) return true;
-		if (other == null) return false;
-		if (this.getClass() != other.getClass()) return false;
-		Circle otherC = (Circle) other;
-		return this.center.equals(otherC.getCenter()) &&
-				this.radius == otherC.getRadius() &&
-				this.color.equals(otherC.getColor());
-	}
-}
->>>>>>> 631c176a84f49e27ad056decc8d81c40c4e5f89c
